@@ -59,38 +59,3 @@ app.listen(3000, () => {
 });
 
 
-
-
-
-
-
-
-/*const express = require("express");
-const bodyParser = require("body-parser");
-const fs = require("fs");
-
-const app = express();
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("public"));  // serve your html + css
-
-// Handle form submission
-app.post("/save", (req, res) => {
-    const name = req.body.username;
-    const matric = req.body.matric;
-
-    const data = `Name: ${name} - Matric: ${matric}\n`;
-
-    fs.appendFile("records.txt", data, (err) => {
-        if (err) {
-            return res.send("Error saving data.");
-        }
-        res.send("<h2>Record Saved Successfully!</h2><a href='/contact.html'>Back</a>");
-    });
-});
-
-// Start the server
-app.listen(3000, () => {
-    console.log("Server running at http://localhost:3000");
-});*/
-
-
